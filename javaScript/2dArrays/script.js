@@ -1,7 +1,10 @@
 var quiz = [
     ['How many stars are on the United States flag?' , 50],
     ['How many championships do the Boston Celtics have?', 17],
-    ['How many members are there in the United States Senate?' , 100]
+    ['How many members are there in the United States Senate?' , 100],
+    ['How many states start with the letter I?' , 4],
+    ['What year was the constitution signed' , 1776],
+    ['How many sides are there in an octagon?' , 8]
 ];
 
 var question;
@@ -33,7 +36,7 @@ function htmlBuilder(arr){
 for(var i = 0; i < quiz.length; i++) {
     question = quiz[i][0]; //Stores question from quiz array into question variable
     answer = quiz[i][1] //Stores answer from quiz array into answer variable
-    userGuess = parseInt(prompt(question)); // Parses user string input from prompt and stores int value in userGuess variable
+    userGuess = parseInt(prompt(question)); //Parses user string input from prompt and stores int value in userGuess variable
 
     if (answer === userGuess){ //Compares user guess to answer
         correctAnswers++; //Store total number of correct answers
